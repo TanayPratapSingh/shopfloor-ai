@@ -1,0 +1,22 @@
+kafka:
+  bootstrap_servers: "localhost:9092"
+  topics:
+    sensor_raw: "shopfloor.sensor.raw"
+    alerts: "shopfloor.alerts"
+  consumer_group: "shopfloor-consumer"
+
+mlflow:
+  tracking_uri: "http://localhost:5000"
+  experiment_name: "shopfloor-failure-prediction"
+  model_name: "failure-predictor"
+
+chromadb:
+  host: "localhost"
+  port: 8000
+  collection_name: "milling_sops"
+
+llm:
+  provider: "openai"
+  model: "gpt-4o-mini"
+  temperature: 0.1
+  max_tokens: 1024
