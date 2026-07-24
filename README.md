@@ -31,17 +31,17 @@ ShopFloor AI addresses a core challenge in manufacturing: predicting equipment f
 ```
                           ┌─────────────────────────────────┐
                           │       Streamlit Dashboard       │
-                          │  KPIs | Predictor | Chat | Drift│
+                          │ KPIs | Predictor | Chat | Drift │
                           └──────────────┬──────────────────┘
                                          │ HTTP
                           ┌──────────────▼──────────────────┐
                           │         FastAPI Backend         │
-                          │  /predict | /ask | /health      │
+                          │   /predict | /ask | /health     │
                           └───┬──────────┬────────────┬─────┘
                               │          │            │
                     ┌─────────▼──┐ ┌─────▼──────┐ ┌──▼──────────┐
                     │   MLflow   │ │  ChromaDB  │ │    Kafka    │
-                    │  Model     │ │  Vector DB │ │   Broker    │
+                    │    Model   │ │  Vector DB │ │   Broker    │
                     │  Registry  │ │  (RAG)     │ │             │
                     └─────┬──────┘ └─────┬──────┘ └──┬───────┬──┘
                           │              │           │       │
