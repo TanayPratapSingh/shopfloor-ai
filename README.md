@@ -81,7 +81,7 @@ SOP Documents ──→ ChromaDB ──→ LangChain RAG ──→ Q&A
 ### 1. Clone and configure
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/shopfloor-ai.git
+git clone https://github.com/TanayPratapSingh/shopfloor-ai.git
 cd shopfloor-ai
 
 cp .env.example .env
@@ -191,15 +191,6 @@ make format
 make api        # start FastAPI
 make dashboard  # start Streamlit
 ```
-
-## Resume Bullet Points
-
-> **ShopFloor AI** — Intelligent Manufacturing Analytics Platform
-> - Built end-to-end ML platform predicting milling machine failures across 5 failure modes with 96%+ F1 score, tracking experiments across 3 model architectures in MLflow
-> - Engineered real-time sensor data pipeline using Apache Kafka (producer/consumer) with rolling-window KPI computation and automated anomaly alerting
-> - Implemented RAG system using LangChain + ChromaDB + OpenAI API enabling natural-language Q&A over manufacturing SOPs and maintenance documentation
-> - Automated daily retraining pipeline with Apache Airflow including data quality gates, model evaluation, and conditional promotion to production registry
-> - Containerized 7-service architecture (Kafka, MLflow, ChromaDB, Airflow, FastAPI, Streamlit) with Docker Compose
 
 ## Citation
 
