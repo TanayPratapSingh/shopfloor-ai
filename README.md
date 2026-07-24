@@ -30,31 +30,31 @@ ShopFloor AI addresses a core challenge in manufacturing: predicting equipment f
 
 ```
                           ┌─────────────────────────────────┐
-                          │       Streamlit Dashboard        │
-                          │  KPIs | Predictor | Chat | Drift │
+                          │       Streamlit Dashboard       │
+                          │  KPIs | Predictor | Chat | Drift│
                           └──────────────┬──────────────────┘
                                          │ HTTP
                           ┌──────────────▼──────────────────┐
-                          │         FastAPI Backend          │
-                          │  /predict | /ask | /health       │
+                          │         FastAPI Backend         │
+                          │  /predict | /ask | /health      │
                           └───┬──────────┬────────────┬─────┘
                               │          │            │
                     ┌─────────▼──┐ ┌─────▼──────┐ ┌──▼──────────┐
-                    │   MLflow   │ │  ChromaDB  │ │    Kafka     │
-                    │  Model     │ │  Vector DB │ │   Broker     │
-                    │  Registry  │ │  (RAG)     │ │              │
+                    │   MLflow   │ │  ChromaDB  │ │    Kafka    │
+                    │  Model     │ │  Vector DB │ │   Broker    │
+                    │  Registry  │ │  (RAG)     │ │             │
                     └─────┬──────┘ └─────┬──────┘ └──┬───────┬──┘
                           │              │           │       │
                           │         ┌────▼─────┐ ┌──▼──┐ ┌──▼────────┐
-                          │         │ LangChain│ │Prod-│ │ Consumer   │
-                          │         │ + OpenAI │ │ucer │ │ (rolling   │
-                          │         │ API      │ │     │ │  KPIs +    │
-                          │         └──────────┘ └─────┘ │  alerts)   │
+                          │         │ LangChain│ │Prod-│ │ Consumer  │
+                          │         │ + OpenAI │ │ucer │ │ (rolling  │
+                          │         │ API      │ │     │ │  KPIs +   │
+                          │         └──────────┘ └─────┘ │  alerts)  │
                           │                              └───────────┘
                     ┌─────▼──────────────────────────────────────────┐
-                    │           Apache Airflow Orchestration          │
-                    │  Data Quality > Train > Evaluate > Promote > RAG│
-                    │                  (Daily @ 2 AM)                 │
+                    │           Apache Airflow Orchestration         │
+                    │ Data Quality > Train > Evaluate > Promote > RAG│
+                    │                  (Daily @ 2 AM)                │
                     └────────────────────────────────────────────────┘
 ```
 
