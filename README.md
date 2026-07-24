@@ -2,7 +2,7 @@
 
 An end-to-end manufacturing intelligence platform that predicts machine failures from sensor data, streams real-time production KPIs through Apache Kafka, and enables natural-language queries over maintenance documentation using Retrieval-Augmented Generation (RAG).
 
-Built on the [AI4I 2020 Predictive Maintenance Dataset](https://www.kaggle.com/datasets/stephanmatzka/predictive-maintenance-dataset-ai4i-2020) (10,000 records, 14 features, 5 failure modes from a CNC milling process).
+Built on the [AI4I 2020 Predictive Maintenance Dataset](https://www.kaggle.com/datasets/stephanmatzka/predictive-maintenance-dataset-ai4i-2020)
 
 <!-- Screenshots: replace these with your actual screenshots -->
 <!-- ![Dashboard](docs/dashboard.png) -->
