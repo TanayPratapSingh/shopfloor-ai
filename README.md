@@ -1,10 +1,5 @@
 # ShopFloor AI
 
-[![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/)
-[![Tests](https://img.shields.io/badge/tests-15%20passed-brightgreen.svg)](tests/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Docker](https://img.shields.io/badge/docker-7%20services-%230db7ed.svg?logo=docker&logoColor=white)](docker-compose.yml)
-
 An end-to-end manufacturing intelligence platform that predicts machine failures from sensor data, streams real-time production KPIs through Apache Kafka, and enables natural-language queries over maintenance documentation using Retrieval-Augmented Generation (RAG).
 
 Built on the [AI4I 2020 Predictive Maintenance Dataset](https://www.kaggle.com/datasets/stephanmatzka/predictive-maintenance-dataset-ai4i-2020) (10,000 records, 14 features, 5 failure modes from a CNC milling process).
